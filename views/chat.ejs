@@ -366,7 +366,6 @@
                     peerConnection.close();
                     peerConnection = null;
                     localStream.getTracks().forEach(track => track.stop());
-
                     document.querySelector(".videoblock").classList.add("hidden");
                     socket.emit("signalingMessage", { room, message: JSON.stringify({ type: "hangup" }) });
                     inCall = false;
