@@ -41,7 +41,6 @@ VideoChat is a **web application** that enables seamless, real-time video commun
    ```bash
    npm install
    ```
-
 ### Running the App
 
 1. **Start the server**
