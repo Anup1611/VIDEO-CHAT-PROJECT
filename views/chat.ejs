@@ -337,7 +337,6 @@
                 initialize();
                 document.querySelector(".videoblock").classList.remove("hidden");
             })
-
             document.querySelector("#accept-call")
                 .addEventListener("click", function () {
                     document.querySelector("#incoming-call").classList.add("hidden");
@@ -345,7 +344,6 @@
                     document.querySelector(".videoblock").classList.remove("hidden");
                     socket.emit("acceptCall", { room })
                 })
-
             document.querySelector("#reject-call")
                 .addEventListener("click", function () {
                     document.querySelector("#incoming-call").classList.add("hidden");
@@ -355,7 +353,6 @@
             socket.on("callRejected", function () {
                 alert("Call rejected by other user");
             })
-
             document.querySelector("#hangup")
                 .addEventListener("click", function () {
                     hangup();
